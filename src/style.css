@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body, #app {
+  height: 100%;
+}
+
+body {
+  @apply font-sans text-gray-700 bg-[#f4f6fb];
+  background-image: linear-gradient(180deg, #f8faff 0%, #f4f6fb 42%, #f1f4fa 100%);
+}
+
+:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Table row hover, kept subtle per "minimal visual noise" principle */
+.table-row-hover:hover {
+  background-color: #f8fafc;
+}
+
+.app-shell {
+  background: #f4f6fb;
+}
+
+.surface-card {
+  @apply rounded-card border border-gray-200 bg-white shadow-card;
+}
+
+.hero-gradient {
+  background: linear-gradient(115deg, #006eae 0%, #087bb9 48%, #205e89 100%);
+  box-shadow: 0 12px 28px rgba(3, 105, 161, 0.16);
+}
